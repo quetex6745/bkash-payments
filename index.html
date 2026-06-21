@@ -1,0 +1,71 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>bKash Payment</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    text-align:center;
+    width:350px;
+}
+.logo{
+    color:#e2136e;
+    font-size:32px;
+    font-weight:bold;
+}
+.number{
+    font-size:24px;
+    font-weight:bold;
+    margin:15px 0;
+}
+.btn{
+    background:#e2136e;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+.note{
+    margin-top:15px;
+    color:#555;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="logo">bKash</div>
+    <h2>Send Money</h2>
+
+    <p>নিচের নম্বরে টাকা পাঠান</p>
+
+    <div class="number">01806551120</div>
+
+    <button class="btn"
+    onclick="navigator.clipboard.writeText('01806551120');
+    alert('নম্বর কপি হয়েছে');">
+    নম্বর কপি করুন
+    </button>
+
+    <div class="note">
+        bKash App → Send Money → নম্বর দিন → টাকা পাঠান
+    </div>
+</div>
+
+</body>
+</html>
